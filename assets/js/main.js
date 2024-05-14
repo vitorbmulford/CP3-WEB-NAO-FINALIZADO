@@ -17,20 +17,16 @@ mudarCor.addEventListener("click", () => {
 });
 
 function validar() {
+  //declarando as variveis
   let usuario = document.getElementById("usuario").value;
   let senha = document.getElementById("senha").value;
 
-  if (usuario === "Admin" && senha === "12345") {
-    window.location.href = "quiz.html";
+  if (usuario === "Admin" && senha == "12345") {
+    window.open("quiz.html");
   } else {
-    alert("Usuário e/ou senha inválidos");
+    alert("usuario e senha invalido");
   }
 }
-window.addEventListener("load", function () {
-  if (window.location.pathname.includes("quiz.html")) {
-    exibirPerguntas();
-  }
-});
 
 // Slide show
 let imagens = [
